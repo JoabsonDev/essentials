@@ -30,6 +30,9 @@
       href="https://demo.epic-webdesign.com/tf-essentials/v1/images/favicon.ico"
     />
 
+    <!-- AOS styles -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- local styles -->
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -314,6 +317,7 @@
           </div>
           <img
             class="rounded-md shadow-xl"
+            data-aos="fade-left"
             src="https://demo.epic-webdesign.com/tf-essentials/v1/images/img10.png"
             alt="imagem ilustrativa"
           />
@@ -617,6 +621,7 @@
             class="flex flex-col gap-8 md:grid md:grid-cols-2 container max-w-screen-lg mx-auto px-4 items-center justify-center"
           >
             <img
+              data-aos="fade-right"
               class="rounded-md shadow-xl min-h-22.75"
               src="https://demo.epic-webdesign.com/tf-essentials/v1/images/img4.jpg"
               alt="imagem ilustrativa"
@@ -634,7 +639,7 @@
                   <label
                     class="peer text-blue-950 text-lg font-semibold block pt-1.5 pb-2 w-full border-b border-gray-200 cursor-pointer select-none"
                   >
-                    <input class="w-0 h-0 -mr-0.125" type="checkbox" />
+                    <input class="w-0 h-0 -mr-0.125" type="checkbox" checked />
                     Email and user settings
                   </label>
                   <div
@@ -747,9 +752,11 @@
           class="container max-w-screen-lg mx-auto flex flex-wrap justify-center items-stretch gap-8"
         >
           <div
+            data-aos="fade-down-right"
             class="bg-white shadow-lg flex-1 basis-80 max-w-lg rounded-md flex flex-col items-center pb-7 border-b-[3px] overflow-hidden border-gray-200 hover:border-blue-500 transition duration-1000"
           >
             <img
+              class="w-full"
               src="https://demo.epic-webdesign.com/tf-essentials/v1/images/team1.jpg"
               alt="pic"
             />
@@ -801,9 +808,11 @@
             </div>
           </div>
           <div
+            data-aos="fade-down"
             class="bg-white shadow-lg flex-1 basis-80 max-w-lg rounded-md flex flex-col items-center pb-7 border-b-[3px] overflow-hidden border-gray-200 hover:border-blue-500 transition duration-1000"
           >
             <img
+              class="w-full"
               src="https://demo.epic-webdesign.com/tf-essentials/v1/images/team4.jpg"
               alt="pic"
             />
@@ -855,9 +864,11 @@
             </div>
           </div>
           <div
+            data-aos="fade-down-left"
             class="bg-white shadow-lg flex-1 basis-80 max-w-lg rounded-md flex flex-col items-center pb-7 border-b-[3px] overflow-hidden border-gray-200 hover:border-blue-500 transition duration-1000"
           >
             <img
+              class="w-full"
               src="https://demo.epic-webdesign.com/tf-essentials/v1/images/team3.jpg"
               alt="pic"
             />
@@ -1025,7 +1036,7 @@
           <div
             class="container max-w-screen-lg mx-auto flex flex-col gap-8 items-center md:grid md:grid-cols-3 md:grid-rows-2"
           >
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center" data-aos="zoom-in">
               <i
                 class="fas fa-tachometer-alt text-blue-500 text-5xl mb-2.5"
               ></i>
@@ -1040,7 +1051,7 @@
               </p>
             </div>
 
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center" data-aos="zoom-in">
               <i class="fas fa-chart-line text-blue-500 text-5xl mb-2.5"></i>
               <h3 class="text-blue-950 text-xl font-bold mb-2.5">
                 User Friendly
@@ -1053,7 +1064,7 @@
               </p>
             </div>
 
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center" data-aos="zoom-in">
               <i class="fas fa-bell text-blue-500 text-5xl mb-2.5"></i>
               <h3 class="text-blue-950 text-xl font-bold mb-2.5">
                 Smart Notifications
@@ -1066,7 +1077,7 @@
               </p>
             </div>
 
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center" data-aos="zoom-in">
               <i
                 class="fas fa-hand-holding-usd text-blue-500 text-5xl mb-2.5"
               ></i>
@@ -1081,7 +1092,7 @@
               </p>
             </div>
 
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center" data-aos="zoom-in">
               <i class="fas fa-rocket text-blue-500 text-5xl mb-2.5"></i>
               <h3 class="text-blue-950 text-xl font-bold mb-2.5">
                 Unique Features
@@ -1094,7 +1105,7 @@
               </p>
             </div>
 
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center" data-aos="zoom-in">
               <i class="fab fa-rocketchat text-blue-500 text-5xl mb-2.5"></i>
               <h3 class="text-blue-950 text-xl font-bold mb-2.5">
                 Support 24/7
@@ -1260,6 +1271,7 @@
 
           <div class="container max-w-screen-lg mx-auto">
             <form
+              data-aos="zoom-in"
               id="waiting-list"
               class="flex items-center justify-center w-full"
             >
@@ -1589,5 +1601,10 @@
         </li>
       </ul>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
   </body>
 </html>
