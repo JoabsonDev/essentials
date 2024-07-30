@@ -4,6 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esse é um clone do template do Essentials, criado com finalidade de estudos."
+    />
+    <meta name="keywords" content="html, css, javascript, tailwind" />
+    <meta name="author" content="Joabson Silva" />
+    <meta
+      property="og:title"
+      content="Essentials - SaaS Landing Page Template"
+    />
+    <meta
+      property="og:description"
+      content="Esse é um clone do template do Essentials, criado com finalidade de estudos."
+    />
+    <meta
+      property="og:image"
+      content="https://demo.epic-webdesign.com/tf-essentials/v1/images/img0.png"
+    />
+    <meta
+      property="og:url"
+      content="https://demo.epic-webdesign.com/tf-essentials/v1/#"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Essentials - SaaS Landing Page Template"
+    />
+    <meta
+      name="twitter:description"
+      content="Esse é um clone do template do Essentials, criado com finalidade de estudos."
+    />
+    <meta
+      name="twitter:image"
+      content="https://demo.epic-webdesign.com/tf-essentials/v1/images/img0.png"
+    />
     <title>Essentials - SaaS Landing Page Template</title>
     <!-- icons -->
     <link
@@ -55,6 +90,8 @@
 
         <button
           id="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
           class="text-blue-500 text-lg text-nowrap px-4 py-1 border border-blue-500 rounded-md sm:inline md:hidden"
         >
           <i class="fa-solid fa-bars" aria-hidden="true"></i>
@@ -266,6 +303,7 @@
             <div class="flex mb-4">
               <i
                 class="fas fa-chart-line block min-w-20 h-20 rounded-full mt-2.5 mr-6 mb-6 text-4xl flex items-center justify-center border-b border-gray-200 bg-gray-100 text-blue-500"
+                aria-hidden="true"
               ></i>
 
               <div>
@@ -281,6 +319,7 @@
             <div class="flex mb-4">
               <i
                 class="fas fa-network-wired block min-w-20 h-20 rounded-full mt-2.5 mr-6 mb-6 text-4xl flex items-center justify-center border-b border-gray-200 bg-gray-100 text-blue-500"
+                aria-hidden="true"
               ></i>
 
               <div>
@@ -296,6 +335,7 @@
             <div class="flex mb-4">
               <i
                 class="fas fa-rocket block min-w-20 h-20 rounded-full mt-2.5 mr-6 mb-6 text-4xl flex items-center justify-center border-b border-gray-200 bg-gray-100 text-blue-500"
+                aria-hidden="true"
               ></i>
 
               <div>
@@ -332,8 +372,9 @@
               <button
                 id="show-modal"
                 class="absolute inset-2/4 -translate-x-1/2 -translate-y-1/2 min-w-20 h-20 rounded-full bg-white text-blue-600 text-4xl"
+                aria-label="play"
               >
-                <i class="fas fa-play"></i>
+                <i class="fas fa-play" aria-hidden="true"></i>
               </button>
             </div>
 
@@ -365,6 +406,7 @@
               x
             </button>
             <iframe
+              title="YouTube Video"
               class="w-full h-full aspect-video"
               src="//www.youtube.com/embed/FPfQMVf4vwQ?autoplay=1"
               frameborder="0"
@@ -622,7 +664,7 @@
           >
             <img
               data-aos="fade-right"
-              class="rounded-md shadow-xl min-h-[364px]"
+              class="rounded-md shadow-xl"
               src="https://demo.epic-webdesign.com/tf-essentials/v1/images/img4.jpg"
               alt="imagem ilustrativa"
             />
@@ -772,28 +814,36 @@
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-twitter"
                     href="#"
-                    ><i class="fab fa-twitter"></i
+                    aria-label="twitter"
+                  >
+                    <i class="fab fa-twitter" aria-hidden="true"> </i
                   ></a>
                 </li>
                 <li>
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-pinterest"
                     href="#"
-                    ><i class="fab fa-pinterest"></i
+                    aria-label="pinterest"
+                  >
+                    <i class="fab fa-pinterest" aria-hidden="true"> </i
                   ></a>
                 </li>
                 <li>
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-linkedin"
                     href="#"
-                    ><i class="fab fa-linkedin-in"></i
+                    aria-label="linkedin-in"
+                  >
+                    <i class="fab fa-linkedin-in" aria-hidden="true"> </i
                   ></a>
                 </li>
                 <li>
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-dribbble"
                     href="#"
-                    ><i class="fab fa-dribbble"></i
+                    aria-label="dribbble"
+                  >
+                    <i class="fab fa-dribbble" aria-hidden="true"> </i
                   ></a>
                 </li>
               </ul>
@@ -828,29 +878,37 @@
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-twitter"
                     href="#"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
+                    aria-label="twitter"
+                  >
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                  </a>
                 </li>
                 <li>
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-pinterest"
                     href="#"
-                    ><i class="fab fa-pinterest"></i
-                  ></a>
+                    aria-label="pinterest"
+                  >
+                    <i class="fab fa-pinterest" aria-hidden="true"></i>
+                  </a>
                 </li>
                 <li>
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-linkedin"
                     href="#"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
+                    aria-label="linkedin-in"
+                  >
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                  </a>
                 </li>
                 <li>
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-dribbble"
                     href="#"
-                    ><i class="fab fa-dribbble"></i
-                  ></a>
+                    aria-label="dribbble"
+                  >
+                    <i class="fab fa-dribbble" aria-hidden="true"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -884,29 +942,37 @@
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-twitter"
                     href="#"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
+                    aria-label="twitter"
+                  >
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                  </a>
                 </li>
                 <li>
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-pinterest"
                     href="#"
-                    ><i class="fab fa-pinterest"></i
-                  ></a>
+                    aria-label="pinterest"
+                  >
+                    <i class="fab fa-pinterest" aria-hidden="true"></i>
+                  </a>
                 </li>
                 <li>
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-linkedin"
                     href="#"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
+                    aria-label="linkedin-in"
+                  >
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                  </a>
                 </li>
                 <li>
                   <a
                     class="flex items-center justify-center w-[34px] aspect-square text-base rounded-full text-gray-100 transition duration-200 ease-in-out hover:text-gray-300 bg-dribbble"
                     href="#"
-                    ><i class="fab fa-dribbble"></i
-                  ></a>
+                    aria-label="dribbble"
+                  >
+                    <i class="fab fa-dribbble" aria-hidden="true"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -984,25 +1050,35 @@
             <button
               data-id="carousel-previous"
               class="absolute w-44 h-full top-0 left-0 opacity-50 hover:opacity-100"
+              aria-label="previous"
             >
-              <i class="fa-solid fa-chevron-left text-2xl text-white"></i>
+              <i
+                class="fa-solid fa-chevron-left text-2xl text-white"
+                aria-hidden="true"
+              ></i>
             </button>
 
             <button
               data-id="carousel-next"
               class="absolute w-44 h-full top-0 right-0 opacity-50 hover:opacity-100"
+              aria-label="next"
             >
-              <i class="fa-solid fa-chevron-right text-2xl text-white"></i>
+              <i
+                class="fa-solid fa-chevron-right text-2xl text-white"
+                aria-hidden="true"
+              ></i>
             </button>
           </div>
           <div class="flex justify-center mt-6 gap-1.5">
             <button
               data-id="carousel-action"
               class="w-7 h-2 bg-white rounded-md opacity-100"
+              aria-label="item 1"
             ></button>
             <button
               data-id="carousel-action"
               class="w-7 h-2 bg-white rounded-md opacity-50"
+              aria-label="item 2"
             ></button>
           </div>
         </div>
@@ -1031,6 +1107,7 @@
             <div class="flex flex-col items-center" data-aos="zoom-in">
               <i
                 class="fas fa-tachometer-alt text-blue-500 text-5xl mb-2.5"
+                aria-hidden="true"
               ></i>
               <h3 class="text-blue-950 text-xl font-bold mb-2.5">
                 Powerful Dashboard
@@ -1044,7 +1121,10 @@
             </div>
 
             <div class="flex flex-col items-center" data-aos="zoom-in">
-              <i class="fas fa-chart-line text-blue-500 text-5xl mb-2.5"></i>
+              <i
+                class="fas fa-chart-line text-blue-500 text-5xl mb-2.5"
+                aria-hidden="true"
+              ></i>
               <h3 class="text-blue-950 text-xl font-bold mb-2.5">
                 User Friendly
               </h3>
@@ -1057,7 +1137,10 @@
             </div>
 
             <div class="flex flex-col items-center" data-aos="zoom-in">
-              <i class="fas fa-bell text-blue-500 text-5xl mb-2.5"></i>
+              <i
+                class="fas fa-bell text-blue-500 text-5xl mb-2.5"
+                aria-hidden="true"
+              ></i>
               <h3 class="text-blue-950 text-xl font-bold mb-2.5">
                 Smart Notifications
               </h3>
@@ -1072,6 +1155,7 @@
             <div class="flex flex-col items-center" data-aos="zoom-in">
               <i
                 class="fas fa-hand-holding-usd text-blue-500 text-5xl mb-2.5"
+                aria-hidden="true"
               ></i>
               <h3 class="text-blue-950 text-xl font-bold mb-2.5">
                 Cost Control
@@ -1085,7 +1169,10 @@
             </div>
 
             <div class="flex flex-col items-center" data-aos="zoom-in">
-              <i class="fas fa-rocket text-blue-500 text-5xl mb-2.5"></i>
+              <i
+                class="fas fa-rocket text-blue-500 text-5xl mb-2.5"
+                aria-hidden="true"
+              ></i>
               <h3 class="text-blue-950 text-xl font-bold mb-2.5">
                 Unique Features
               </h3>
@@ -1098,7 +1185,10 @@
             </div>
 
             <div class="flex flex-col items-center" data-aos="zoom-in">
-              <i class="fab fa-rocketchat text-blue-500 text-5xl mb-2.5"></i>
+              <i
+                class="fab fa-rocketchat text-blue-500 text-5xl mb-2.5"
+                aria-hidden="true"
+              ></i>
               <h3 class="text-blue-950 text-xl font-bold mb-2.5">
                 Support 24/7
               </h3>
@@ -1187,14 +1277,17 @@
               <button
                 data-id="carousel-action"
                 class="w-7 h-2 bg-blue-500 rounded-md"
+                aria-label="item 1"
               ></button>
               <button
                 data-id="carousel-action"
                 class="w-7 h-2 bg-gray-300 rounded-md"
+                aria-label="item 2"
               ></button>
               <button
                 data-id="carousel-action"
                 class="w-7 h-2 bg-gray-300 rounded-md"
+                aria-label="item 3"
               ></button>
             </div>
           </div>
@@ -1320,6 +1413,7 @@
               />
               <i
                 class="fa fa-link eye-icon absolute inset-0 flex items-center justify-center text-4xl bg-black text-white opacity-0 group-hover:opacity-80 transition duration-300"
+                aria-hidden="true"
               ></i>
             </a>
 
@@ -1337,14 +1431,20 @@
                 class="font-serif text-stone-600 italic text-sm hover:text-sky-600 transition duration-200 border-r border-stone-600 pr-2.5 mr-2.5"
                 href="#"
               >
-                <i class="fa fa-user text-lg text-stone-600"></i>
+                <i
+                  class="fa fa-user text-lg text-stone-600"
+                  aria-hidden="true"
+                ></i>
                 Paul Smith
               </a>
               <a
                 class="font-serif text-stone-600 italic text-sm hover:text-sky-600 transition duration-200"
                 href="#"
               >
-                <i class="fa fa-tags text-lg text-stone-600"></i>
+                <i
+                  class="fa fa-tags text-lg text-stone-600"
+                  aria-hidden="true"
+                ></i>
                 WordPress
               </a>
               <p class="font-open-sans text-lg text-gray-500 mt-3">
@@ -1364,6 +1464,7 @@
               />
               <i
                 class="fa fa-link eye-icon absolute inset-0 flex items-center justify-center text-4xl bg-black text-white opacity-0 group-hover:opacity-80 transition duration-300"
+                aria-hidden="true"
               ></i>
             </a>
 
@@ -1381,14 +1482,20 @@
                 class="font-serif text-stone-600 italic text-sm hover:text-sky-600 transition duration-200 border-r border-stone-600 pr-2.5 mr-2.5"
                 href="#"
               >
-                <i class="fa fa-user text-lg text-stone-600"></i>
+                <i
+                  class="fa fa-user text-lg text-stone-600"
+                  aria-hidden="true"
+                ></i>
                 By John Doe
               </a>
               <a
                 class="font-serif text-stone-600 italic text-sm hover:text-sky-600 transition duration-200"
                 href="#"
               >
-                <i class="fa fa-tags text-lg text-stone-600"></i>
+                <i
+                  class="fa fa-tags text-lg text-stone-600"
+                  aria-hidden="true"
+                ></i>
                 Marketing
               </a>
               <p class="font-open-sans text-lg text-gray-500 mt-3">
@@ -1408,6 +1515,7 @@
               />
               <i
                 class="fa fa-link eye-icon absolute inset-0 flex items-center justify-center text-4xl bg-black text-white opacity-0 group-hover:opacity-80 transition duration-300"
+                aria-hidden="true"
               ></i>
             </a>
 
@@ -1425,14 +1533,20 @@
                 class="font-serif text-stone-600 italic text-sm hover:text-sky-600 transition duration-200 border-r border-stone-600 pr-2.5 mr-2.5"
                 href="#"
               >
-                <i class="fa fa-user text-lg text-stone-600"></i>
+                <i
+                  class="fa fa-user text-lg text-stone-600"
+                  aria-hidden="true"
+                ></i>
                 By John Doe
               </a>
               <a
                 class="font-serif text-stone-600 italic text-sm hover:text-sky-600 transition duration-200"
                 href="#"
               >
-                <i class="fa fa-tags text-lg text-stone-600"></i>
+                <i
+                  class="fa fa-tags text-lg text-stone-600"
+                  aria-hidden="true"
+                ></i>
                 Design
               </a>
               <p class="font-open-sans text-lg text-gray-500 mt-3">
@@ -1517,6 +1631,7 @@
           </h3>
 
           <iframe
+            title="Google Maps"
             class="bg-gray-100 border border-gray-200 rounded-lg max-w-full mb-5 p-2.5"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9050207912896!2d-0.14675028449633118!3d51.514958479636384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c335c1%3A0xda2164b934c67c1a!2sOxford+St%2C+London%2C+UK!5e0!3m2!1sen!2sro!4v1485889312335"
             width="600"
@@ -1530,6 +1645,7 @@
             <li class="font-open-sans text-base text-gray-400">
               <i
                 class="fas fa-map-marker-alt text-blue-500 text-lg font-bold mr-1"
+                aria-hidden="true"
               ></i>
               10 Oxford Street, London, UK, E1 1EC
             </li>
@@ -1542,7 +1658,10 @@
               </a>
             </li>
             <li class="font-open-sans text-base text-gray-400">
-              <i class="fas fa-phone text-blue-500 text-lg font-bold mr-1"></i>
+              <i
+                class="fas fa-phone text-blue-500 text-lg font-bold mr-1"
+                aria-hidden="true"
+              ></i>
               +44 987 654 321
             </li>
           </ul>
@@ -1565,38 +1684,62 @@
 
       <ul class="flex gap-5">
         <li>
-          <a class="hover:opacity-50 transition duration-200" href="#">
-            <i class="fab fa-twitter text-2xl"></i>
+          <a
+            class="hover:opacity-50 transition duration-200"
+            href="#"
+            aria-label="twitter"
+          >
+            <i class="fab fa-twitter text-2xl" aria-hidden="true"></i>
           </a>
         </li>
 
         <li>
-          <a class="hover:opacity-50 transition duration-200" href="#">
-            <i class="fab fa-pinterest text-2xl"></i>
+          <a
+            class="hover:opacity-50 transition duration-200"
+            href="#"
+            aria-label="pinterest"
+          >
+            <i class="fab fa-pinterest text-2xl" aria-hidden="true"></i>
           </a>
         </li>
 
         <li>
-          <a class="hover:opacity-50 transition duration-200" href="#">
-            <i class="fab fa-facebook-square text-2xl"></i>
+          <a
+            class="hover:opacity-50 transition duration-200"
+            href="#"
+            aria-label="facebook"
+          >
+            <i class="fab fa-facebook-square text-2xl" aria-hidden="true"></i>
           </a>
         </li>
 
         <li>
-          <a class="hover:opacity-50 transition duration-200" href="#">
-            <i class="fab fa-instagram text-2xl"></i>
+          <a
+            class="hover:opacity-50 transition duration-200"
+            href="#"
+            aria-label="instagram"
+          >
+            <i class="fab fa-instagram text-2xl" aria-hidden="true"></i>
           </a>
         </li>
 
         <li>
-          <a class="hover:opacity-50 transition duration-200" href="#">
-            <i class="fab fa-skype text-2xl"></i>
+          <a
+            class="hover:opacity-50 transition duration-200"
+            href="#"
+            aria-label="skype"
+          >
+            <i class="fab fa-skype text-2xl" aria-hidden="true"></i>
           </a>
         </li>
 
         <li>
-          <a class="hover:opacity-50 transition duration-200" href="#">
-            <i class="fab fa-dribble text-2xl"></i>
+          <a
+            class="hover:opacity-50 transition duration-200"
+            href="#"
+            aria-label="dribble"
+          >
+            <i class="fab fa-dribble text-2xl" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
