@@ -6,26 +6,24 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Open Sans"', "Arial", "sans-serif"],
-        sans: ['"Dosis"', "Arial", "sans-serif"]
+        "open-sans": ['"Open Sans"', "Arial", "sans-serif"],
+        sans: ['"Dosis"', "Arial", "sans-serif"],
+        custom: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"Segoe UI"',
+          "Roboto",
+          '"Helvetica Neue"',
+          "Arial",
+          "sans-serif",
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"'
+        ]
       },
       textShadow: {
         sm: "1px 1px 1px var(--tw-shadow-color)"
-      },
-      letterSpacing: {
-        "custom-1px": "1px"
-      },
-      margin: {
-        0.125: "2px"
-      },
-      width: {
-        2.125: "34px"
-      },
-      height: {
-        0.1875: "3px"
-      },
-      minHeight: {
-        22.75: "364px"
       },
       colors: {
         twitter: "#4099ff",
@@ -33,8 +31,11 @@ module.exports = {
         linkedin: "#3b5998",
         dribbble: "#ea4c89"
       },
-      gap: {
-        1.875: "30px"
+      boxShadow: {
+        custom: "0 3px 10px -5px #000000"
+      },
+      fontSize: {
+        tiny: "10px"
       }
     }
   },

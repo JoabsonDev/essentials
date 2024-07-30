@@ -135,7 +135,7 @@ class Carousel {
 
   init() {
     this.bindEvents()
-    setInterval(() => this.next(), 10000)
+    setInterval(() => typeof this.next === "function" && this.next(), 10000)
   }
 
   bindEvents() {
@@ -152,7 +152,7 @@ class Carousel {
       this.control()
     })
 
-    this.next?.addEventListener("click", () => this.next())
+    this.next?.addEventListener("click", () => this?.next())
   }
 
   next() {
