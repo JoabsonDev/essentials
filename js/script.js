@@ -109,8 +109,9 @@ class ModalControl {
       iframes.forEach((iframe) => {
         const src = iframe.src
         iframe.src = ""
-        setTimeout(() => {
+        const timeoutId = setTimeout(() => {
           iframe.src = src
+          clearTimeout(timeoutId)
         }, 200)
       })
     }
