@@ -2,73 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --tw-shadow-color: rgba(0, 0, 0, 0.25);
-  --custom-blue-100: #1e90ff;
-  --custom-blue-200: #1e5799;
-  --custom-green: #79a70a;
-}
-
-.dialog:not([open]) {
-  display: none;
-}
-.dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.75);
-}
-
-/* ribbon */
-.ribbon {
-  position: absolute;
-  right: -6px;
-  top: -5px;
-  z-index: 1;
-  overflow: hidden;
-  width: 75px;
-  height: 75px;
-  text-align: right;
-}
-.ribbon span {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  line-height: 20px;
-  transform: rotate(45deg);
-  width: 100px;
-  display: block;
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 19px;
-  right: -21px;
-  background-color: var(--custom-blue-100);
-}
-.ribbon span::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 100%;
-  z-index: -1;
-  border-left: 3px solid var(--custom-green);
-  border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid var(--custom-green);
-  border-left-color: var(--custom-blue-200);
-  border-top-color: var(--custom-blue-200);
-}
-.ribbon span::after {
-  content: "";
-  position: absolute;
-  right: 0%;
-  top: 100%;
-  z-index: -1;
-  border-right: 3px solid var(--custom-green);
-  border-left: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid var(--custom-green);
-  border-right-color: var(--custom-blue-200);
-  border-top-color: var(--custom-blue-200);
+@layer components {
+  .dialog {
+    &:not([open]) {
+      display: none;
+    }
+    &::backdrop {
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+  }
 }

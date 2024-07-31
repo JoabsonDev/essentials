@@ -61,8 +61,13 @@ class MenuToggle {
   }
 
   init() {
-    this.menuToggle.addEventListener("click", () => {
+    this.menuToggle.addEventListener("click", ({ currentTarget }) => {
       this.menu.classList.toggle("hidden")
+
+      currentTarget.setAttribute(
+        "aria-expanded",
+        `${!this.menu.classList.contains("hidden")}`
+      )
     })
   }
 }
@@ -120,6 +125,8 @@ class AccordionControl {
 
 // Carousel
 class Carousel {
+  _intervalId = null
+
   constructor({ selector = '[data-id="carousel"]', state = {} }) {
     this.element = getElement(selector)
     if (!this.element) return
@@ -135,7 +142,16 @@ class Carousel {
 
   init() {
     this.bindEvents()
-    setInterval(() => this.next(), 10000)
+    this.bindAuto()
+  }
+
+  bindAuto() {
+    if (this._intervalId) clearInterval(this._intervalId)
+    this._intervalId = setInterval(() => {
+      this._currentIndex++
+      if (this._currentIndex >= this.items.length) this._currentIndex = 0
+      this.control()
+    }, 5000)
   }
 
   bindEvents() {
@@ -146,18 +162,18 @@ class Carousel {
       })
     )
 
-    this.previous?.addEventListener("click", () => {
+    this.previousElement?.addEventListener("click", () => {
       this._currentIndex =
         (this._currentIndex - 1 + this.items.length) % this.items.length
+      this.bindAuto()
       this.control()
     })
 
-    this.next?.addEventListener("click", () => this.next())
-  }
-
-  next() {
-    this._currentIndex = (this._currentIndex + 1) % this.items.length
-    this.control()
+    this.nextElement?.addEventListener("click", () => {
+      this._currentIndex = (this._currentIndex + 1) % this.items.length
+      this.bindAuto()
+      this.control()
+    })
   }
 
   control() {
@@ -183,11 +199,11 @@ class Carousel {
     return this.element.querySelectorAll('[data-id="carousel-action"]')
   }
 
-  get previous() {
+  get previousElement() {
     return this.element.querySelector('[data-id="carousel-previous"]')
   }
 
-  get next() {
+  get nextElement() {
     return this.element.querySelector('[data-id="carousel-next"]')
   }
 }
