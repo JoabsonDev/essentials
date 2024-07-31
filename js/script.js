@@ -82,14 +82,28 @@ class ModalControl {
   }
 
   init() {
-    this.showModalButton.addEventListener("click", () =>
+    this.showModalButton.addEventListener("click", () => {
       this.dialog.showModal()
-    )
+      document.body.classList.add("overflow-hidden")
+    })
     this.closeModalButton.addEventListener("click", this.closeModal.bind(this))
+
+    this.dialog.addEventListener("click", (event) => {
+      const dialogRect = this.dialog.getBoundingClientRect()
+      if (
+        event.clientX < dialogRect.left ||
+        event.clientX > dialogRect.right ||
+        event.clientY < dialogRect.top ||
+        event.clientY > dialogRect.bottom
+      ) {
+        this.dialog.close()
+      }
+    })
   }
 
   closeModal() {
     this.dialog.close()
+    document.body.classList.remove("overflow-hidden")
     const iframes = getElements("iframe")
     if (iframes.length > 0) {
       iframes.forEach((iframe) => {
