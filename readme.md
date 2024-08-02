@@ -72,4 +72,10 @@ Este projeto é um clone do template "Essentials High Converting SaaS Landing Pa
 
 ---
 
+## Link do GitHub Pages
+
+[GitHub Pages](https://joabsondev.github.io/essentials/).
+
+---
+
 ⌨️ com ❤️ por [Joabson Silva](https://github.com/JoabsonDev) 😊
